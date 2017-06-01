@@ -1,8 +1,9 @@
 #!/bin/sh /etc/rc.common
+# Copyright (C) 2016 Onion Corporation
 START=99
 
 USE_PROCD=1
-BIN="/usr/bin/python /root/smart-plant/smartPlant.py --quiet --losant /root/smart-plant/losant.json --pump > /dev/null 2>&1 &"
+BIN="/usr/bin/python /root/smart-plant/smartPlant.py --quiet > /dev/null 2>&1 &"
 
 
 start_service() {
